@@ -1,0 +1,38 @@
+# Secrets and local config
+.env
+CLAUDE.md
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Database volumes (if not using Docker named volumes)
+neo4j_data/
+pg_data/
+
+# Jupyter
+.ipynb_checkpoints/

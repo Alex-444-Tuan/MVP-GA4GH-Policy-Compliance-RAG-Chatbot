@@ -1,0 +1,83 @@
+Dr. Sarah Chen, PhD
+Department of Computational Genomics
+Brookfield University
+45 Research Drive, Suite 200
+Cambridge, MA 02139
+Email: s.chen@brookfield.edu
+Phone: (617) 555-0142
+
+Date: March 15, 2026
+
+To: Data Access Committee
+National Genomic Biobank Consortium
+1200 Genome Way
+Bethesda, MD 20892
+
+RE: Request for Access to the Multi-Ancestry Whole Genome Sequencing Dataset
+    (Dataset ID: NGBC-WGS-2024-0847)
+
+Dear Members of the Data Access Committee,
+
+I am writing to formally request access to the Multi-Ancestry Whole Genome Sequencing Dataset (NGBC-WGS-2024-0847) held by the National Genomic Biobank Consortium. This letter outlines the purpose, scope, and conditions of the proposed data use.
+
+1. PRINCIPAL INVESTIGATOR AND RESEARCH TEAM
+
+I, Dr. Sarah Chen, serve as the Principal Investigator for this project. I am an Associate Professor in the Department of Computational Genomics at Brookfield University with 12 years of experience in population genetics and statistical genomics.
+
+The research team includes:
+- Dr. James Okafor, Postdoctoral Fellow (Computational Genomics)
+- Ms. Priya Sharma, PhD Candidate (Biostatistics)
+- Mr. David Liu, Research Assistant (Data Engineering)
+
+2. RESEARCH PURPOSE AND OBJECTIVES
+
+The requested data will be used for a research project titled "Polygenic Risk Score Transferability Across Ancestral Populations" (IRB Protocol #BU-2026-0312). The primary objectives are:
+
+a) To evaluate the predictive accuracy of existing polygenic risk scores for Type 2 Diabetes across five ancestral populations represented in the dataset.
+
+b) To develop novel cross-ancestry PRS methods that improve prediction equity for underrepresented populations.
+
+c) To identify ancestry-specific genetic variants contributing to differential PRS performance.
+
+This research aligns with the GA4GH principle of ensuring that the benefits of genomic science extend equitably to diverse populations.
+
+3. DATA REQUESTED
+
+We request access to the following components of NGBC-WGS-2024-0847:
+
+- Whole genome sequencing data (VCF files) for all participants
+- Associated phenotype data (Type 2 Diabetes status, BMI, age, sex, self-reported ancestry)
+- Quality control metrics and sequencing metadata
+
+We estimate requiring the data for a period of 36 months from the date of access approval.
+
+4. DATA HANDLING AND SECURITY
+
+All data will be stored on Brookfield University's High-Performance Computing Cluster (HPCC), which is located in a physically secure data center with restricted badge access. The computing environment uses encrypted storage and access is controlled via institutional Single Sign-On (SSO) with multi-factor authentication.
+
+Only the named research team members listed above will have access to the individual-level data.
+
+5. ANTICIPATED OUTCOMES AND DISSEMINATION
+
+We expect the research to produce:
+- 2-3 peer-reviewed publications in journals such as Nature Genetics or the American Journal of Human Genetics
+- Open-source software tools for cross-ancestry PRS calculation
+- Presentations at the American Society of Human Genetics (ASHG) annual meeting
+
+All summary-level results and methods will be made publicly available. Individual-level data will not be published or shared.
+
+6. INSTITUTIONAL APPROVAL
+
+This project has been reviewed and approved by the Brookfield University Institutional Review Board (IRB Protocol #BU-2026-0312, approved January 10, 2026).
+
+7. AGREEMENT TO TERMS
+
+I agree to use the data solely for the purposes described above and to comply with all applicable regulations governing genomic data use.
+
+I acknowledge that the data represents contributions from human participants and commit to treating it with the respect and care that this entails.
+
+Sincerely,
+
+Dr. Sarah Chen, PhD
+Associate Professor, Department of Computational Genomics
+Brookfield University

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ga4gh-rag-chatbot"
+version = "0.1.0"
+description = "GraphRAG-based GA4GH policy compliance chatbot"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+log_cli = true
+log_cli_level = "INFO"
+markers = [
+    "integration: marks tests that require running Neo4j + PostgreSQL (deselect with -m 'not integration')",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

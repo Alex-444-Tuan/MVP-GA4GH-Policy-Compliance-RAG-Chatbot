@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "description": "Ground truth annotations for GA4GH compliance gap detection evaluation",
+  "test_cases": [
+    {
+      "id": "TC-01",
+      "letter_file": "data/test_letters/sample_letter_with_gaps.txt",
+      "description": "Typical researcher letter with 10 gaps — primary test case",
+      "expected_assessments": {
+        "REQ-01": "FULLY_MET",
+        "REQ-02": "FULLY_MET",
+        "REQ-03": "FULLY_MET",
+        "REQ-04": "FULLY_MET",
+        "REQ-05": "PARTIALLY_MET",
+        "REQ-06": "NOT_MET",
+        "REQ-07": "NOT_MET",
+        "REQ-08": "NOT_MET",
+        "REQ-09": "NOT_MET",
+        "REQ-10": "NOT_MET",
+        "REQ-11": "NOT_MET",
+        "REQ-12": "NOT_MET",
+        "REQ-13": "NOT_MET",
+        "REQ-14": "NOT_MET",
+        "REQ-15": "NOT_MET"
+      },
+      "expected_verdict": "INVALID_MAJOR_REVISION",
+      "notes": {
+        "REQ-05": "Security is described but lacks encryption algorithm, backup procedures, and intrusion detection",
+        "REQ-01": "Research purpose clearly stated with IRB protocol",
+        "REQ-02": "PI and all team members listed with roles",
+        "REQ-03": "Institutional affiliation is clear",
+        "REQ-04": "IRB approval documented with protocol number and approval date"
+      }
+    },
+    {
+      "id": "TC-02",
+      "letter_file": "data/test_letters/fully_compliant_letter.txt",
+      "description": "Fully compliant letter addressing all 15 requirements",
+      "expected_assessments": {
+        "REQ-01": "FULLY_MET",
+        "REQ-02": "FULLY_MET",
+        "REQ-03": "FULLY_MET",
+        "REQ-04": "FULLY_MET",
+        "REQ-05": "FULLY_MET",
+        "REQ-06": "FULLY_MET",
+        "REQ-07": "FULLY_MET",
+        "REQ-08": "FULLY_MET",
+        "REQ-09": "FULLY_MET",
+        "REQ-10": "FULLY_MET",
+        "REQ-11": "FULLY_MET",
+        "REQ-12": "FULLY_MET",
+        "REQ-13": "FULLY_MET",
+        "REQ-14": "FULLY_MET",
+        "REQ-15": "FULLY_MET"
+      },
+      "expected_verdict": "VALID",
+      "notes": {
+        "REQ-05": "Full security specification: AES-256, TLS 1.3, MFA, IDS, physical controls, penetration testing",
+        "REQ-15": "Massachusetts law specified with Suffolk County jurisdiction"
+      }
+    },
+    {
+      "id": "TC-03",
+      "letter_file": "data/test_letters/minimal_sloppy_letter.txt",
+      "description": "Minimal, vague letter — should fail most requirements",
+      "expected_assessments": {
+        "REQ-01": "PARTIALLY_MET",
+        "REQ-02": "NOT_MET",
+        "REQ-03": "NOT_MET",
+        "REQ-04": "NOT_MET",
+        "REQ-05": "PARTIALLY_MET",
+        "REQ-06": "NOT_MET",
+        "REQ-07": "PARTIALLY_MET",
+        "REQ-08": "NOT_MET",
+        "REQ-09": "NOT_MET",
+        "REQ-10": "NOT_MET",
+        "REQ-11": "NOT_MET",
+        "REQ-12": "NOT_MET",
+        "REQ-13": "NOT_MET",
+        "REQ-14": "NOT_MET",
+        "REQ-15": "NOT_MET"
+      },
+      "expected_verdict": "INVALID_MAJOR_REVISION",
+      "notes": {
+        "REQ-02": "Only first name given — no qualifications, roles, or full team listed",
+        "REQ-05": "Mentions 'keep it safe on our computers' — no specific measures"
+      }
+    }
+  ],
+  "evaluation_config": {
+    "strict_match": false,
+    "partial_credit": {
+      "FULLY_MET_vs_PARTIALLY_MET": 0.5,
+      "PARTIALLY_MET_vs_NOT_MET": 0.5
+    },
+    "verdict_weight": 0.3,
+    "per_requirement_weight": 0.7
+  }
+}
